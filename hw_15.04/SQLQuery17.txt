@@ -1,0 +1,3 @@
+SELECT TOP(5) name, date_of_delivery
+FROM dbo.Products
+ORDER BY date_of_delivery DESC

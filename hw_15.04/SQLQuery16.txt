@@ -1,0 +1,2 @@
+DELETE FROM dbo.Products
+WHERE date_of_delivery < '2022-01-15'

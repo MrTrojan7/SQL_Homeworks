@@ -1,0 +1,15 @@
+
+USE [University]
+GO
+
+SELECT [name]
+      ,[price]
+      ,[discount]
+      ,[quantity]
+      ,quantity*(price-price*discount/100)
+	  AS revenue
+  FROM [dbo].[Products]
+  WHERE name IN ('Nuggets', 'Beef 3:1')
+GO
+
+

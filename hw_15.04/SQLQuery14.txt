@@ -1,0 +1,3 @@
+SELECT id, name
+FROM dbo.Products
+WHERE name LIKE '%o%o%o%'

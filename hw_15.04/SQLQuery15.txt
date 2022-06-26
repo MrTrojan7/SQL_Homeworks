@@ -1,0 +1,2 @@
+DELETE FROM dbo.Products
+WHERE name LIKE '_____'

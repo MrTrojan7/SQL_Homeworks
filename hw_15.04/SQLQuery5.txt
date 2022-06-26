@@ -1,0 +1,3 @@
+Select*
+FROM dbo.Products
+WHERE name LIKE 'k%' AND category LIKE '%a%'

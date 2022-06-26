@@ -1,0 +1,3 @@
+SELECT name, category, producer
+FROM dbo.Products
+WHERE category = 'desserts' AND producer NOT IN ('Frankfurt')

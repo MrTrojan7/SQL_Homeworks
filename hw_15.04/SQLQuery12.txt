@@ -1,0 +1,2 @@
+DELETE FROM dbo.Products
+WHERE quantity < 100 AND price > 70

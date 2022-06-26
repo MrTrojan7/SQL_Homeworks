@@ -1,0 +1,6 @@
+USE University
+GO
+SELECT name, quantity, date_of_delivery
+FROM dbo.Products
+WHERE quantity>10 AND date_of_delivery IN ('2022-02-20', '2022-02-24')
+GO

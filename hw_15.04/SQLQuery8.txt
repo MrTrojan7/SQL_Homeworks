@@ -1,0 +1,4 @@
+SELECT *
+FROM dbo.Products
+WHERE category = 'drinks'
+AND quantity > 100

@@ -1,0 +1,4 @@
+SELECT *
+FROM dbo.Products
+WHERE price < 50 AND date_of_delivery 
+BETWEEN ('2017-10-10') AND ('2022-03-26')

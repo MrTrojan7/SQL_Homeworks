@@ -1,0 +1,1 @@
+UPDATE dbo.Products SET date_of_delivery = '2022-04-14' WHERE price IS NULL

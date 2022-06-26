@@ -1,0 +1,1 @@
+UPDATE dbo.Products SET price = price*0.95 WHERE price IS NOT NULL
