@@ -1,6 +1,8 @@
 SELECT pr.name
 FROM Producer pr
+
 EXCEPT
+
 SELECT pr.name
 FROM Product p JOIN Category c
 ON p.id_category = c.id

@@ -1,3 +1,10 @@
-SELECT DISTINCT p.name, d.date_of_delivery, s.name
-FROM Product p JOIN Delivery d ON p.id = d.id_product
-JOIN Supplier s ON s.id = d.id_supplier
+SELECT Product.name, Delivery.date_of_delivery, Supplier.name
+FROM Product FULL JOIN Delivery
+ON Product.id = Delivery.id_product
+FULL JOIN Supplier ON Supplier.id = Delivery.id_supplier
+
+EXCEPT 
+
+SELECT Product.name, Delivery.date_of_delivery, Supplier.name
+FROM Product, Delivery, Supplier
+WHERE Supplier.id IS NULL
